@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;900&display=swap'); 
+
+*,
+*::before,
+*::after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+/*Navigation bar start*/
+.nav-logo { 
+    font-size: 32px;
+    color: white;
+}
+
+
+body { 
+    background-image: url('../../images/bodybackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 163px;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.navbar-links li { 
+    display: inline-block;
+    margin: 31px;
+}
+.navbar-links a { 
+    color: white;
+    font-size: 20px;
+}
+#search { 
+    width: 200px;
+    height: 46px;
+    border-radius: 50px;
+    padding: 10px;
+    border-color: white;
+    background: inherit;
+    color: white;
+}
+.hamburger { 
+    display: none;
+    cursor: pointer;
+}
+.bar { 
+display: block;
+width: 36px;
+height: 6px;
+margin: 5px auto;
+transition: all 0.3 ease-in-out;
+background-color: rgb(255, 253, 253);
+}
+/*Navigation bar end*/
+
+
+.container { 
+    padding: 64px 338px;
+    background-color: red;
+}
+.preview-header { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.header_components { 
+    text-align: center;
+}
+.header_components h1 { 
+    font-size: 96px ;
+}
+.header_components span { 
+    font-size: 36px;
+}
+.maskgroup_box{ 
+    width: 379px;
+    height: 281px;
+    margin-bottom: 94px;
+    font-size: 48px;
+}
+.maskgroup_box p { 
+    font-size: 15px;
+}
+.maskgroup { 
+    display: flex;
+    justify-content: center;
+}
+.maskgroup_elements { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.releasegames_header { 
+    display: flex;
+    justify-content: center;
+}
+
+.releasegames_header_components { 
+    text-align: center;
+    margin-bottom: 50px;
+}
+.releasegames_header_components h2{ 
+   font-size: 48px;
+
+}
+.releasegames_header_components span { 
+    color: #440C75;
+}
+.releasegames_header_components p{ 
+    font-size: 20px;
+    width: 500px;
+}
+.releasedgames_components_container { 
+    display: flex;
+    justify-content: center;
+}
+.section_releasegames_components { 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.released_games_section_preview h2 { 
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.released_games_section_preview_list { 
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/* .releasedgames_button { 
+    display: flex;
+    justify-content: space-around;
+    margin-top: -60px;
+   
+}
+.releasedgames_button button { 
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    font-size: 18px;
+} */
+footer { 
+    margin-top: 100px;
+}
+.socialmediaicons_flex { 
+    display: flex;
+    justify-content: center;
+}
+.footer_text { 
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width:1162px) { 
+    .navbar-link{ 
+        display: none;
+    }
+   .navbar-links { 
+            position: absolute;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.29);
+            backdrop-filter: blur(8px);
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all 0.5s ;
+            font-size: 30px;
+   }
+   .hamburger { 
+    display: block;
+   
+    left: 2rem;
+}
+.hamburger.active .bar:nth-child(2){ 
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){ 
+    transform: translateY(7px) rotate(45deg);
+
+}
+.hamburger.active .bar:nth-child(3){ 
+  transform: translateY(-15px) rotate(-45deg);
+}
+.bar { 
+    transition: .3s ease;
+}
+.navbar-links.show{ 
+    margin-left: 0;
+    transition: 0.8s ease;
+}
+}
+
+@media screen and (max-width:1150px) { 
+    .maskgroup_elements { 
+        justify-content: center;
+    }
+    .section_releasegames_components { 
+        justify-content: center;
+    }
+}
+@media screen and (max-width:698px) { 
+    body { 
+        padding: 0;
+    }
+    .header_components h1 { 
+        font-size: 50px;
+    }
+    .maskgroup_img img{ 
+        width: 350px;
+    }
+    .releasegames_header_components h2{ 
+        font-size: 30px;
+     
+     }
+    .releasegames_header_components p { 
+        font-size: 15px;
+    }
+    .maskgroup_box p {
+        font-size: 11px;
+    }
+    .maskgroup_box {
+        width: 325px;
+        height: 208px;
+        margin-bottom: 94px;
+        font-size: 25px;
+    }
+    .releasegames_header_components p {
+        font-size: 20px;
+        width: 290px;
+    }
+}

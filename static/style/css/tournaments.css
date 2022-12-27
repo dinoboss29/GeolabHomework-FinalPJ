@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;900&display=swap'); 
+
+*,
+*::before,
+*::after { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+body { 
+    background-image: url('../../images/bodybackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 163px;
+    height: 100%;
+    background-attachment: fixed;
+}
+.nav-logo { 
+    font-size: 32px;
+    color: white;
+}
+.navbar { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.navbar-links li { 
+    display: inline-block;
+    margin: 31px;
+}
+.navbar-links a { 
+    color: white;
+    font-size: 20px;
+}
+#search { 
+    width: 200px;
+    height: 46px;
+    border-radius: 50px;
+    padding: 10px;
+    border-color: white;
+    background: inherit;
+    color: white;
+}
+.hamburger { 
+    display: none;
+    cursor: pointer;
+}
+.bar { 
+display: block;
+width: 36px;
+height: 6px;
+margin: 5px auto;
+transition: all 0.3 ease-in-out;
+background-color: rgb(255, 253, 253);
+}
+
+
+
+.releasedtournaments_header_flex { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.releasedtournaments_header_flex h1 { 
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.releasedtournaments_header_flex span { 
+    color: #8800FF;
+}
+.releasedtournaments_header_flex p { 
+    width: 42%;
+    text-align: center;
+}
+
+.releasedtournaments_container_header { 
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.releasedtournaments_box_container { 
+    background-color: #1E0057;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+   
+}
+.gameimg { 
+    margin-bottom: 30px;
+}
+.game_card_flex { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
+
+.partners_section_header { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.partners_section_header { 
+    margin-top: 70px;
+    font-size: 48px;
+}
+.partners_section_header span { 
+    font-size: 20px;
+}
+.partner_card { 
+    width: 212px;
+}
+.partner_card_flex_container { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.partner_card img { 
+    cursor: pointer;
+}
+
+footer { 
+    margin-top: 100px;
+}
+.socialmediaicons_flex { 
+    display: flex;
+    justify-content: center;
+}
+.footer_text { 
+    text-align: center;
+    
+}
+
+@media screen and (max-width:464px) { 
+    
+    .releasedtournaments_header_flex h1 { 
+        font-size: 30px;
+    }
+ } 
+
+@media screen and (max-width:1162px) { 
+    .navbar-link{ 
+        display: none;
+    }
+   .navbar-links { 
+            position: absolute;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.29);
+            backdrop-filter: blur(8px);
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all 0.5s ;
+            font-size: 30px;
+   }
+   .hamburger { 
+    display: block;
+   
+    left: 2rem;
+}
+.hamburger.active .bar:nth-child(2){ 
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){ 
+    transform: translateY(7px) rotate(45deg);
+
+}
+.hamburger.active .bar:nth-child(3){ 
+  transform: translateY(-15px) rotate(-45deg);
+}
+.bar { 
+    transition: .3s ease;
+}
+.navbar-links.show{ 
+    margin-left: 0;
+    transition: 0.8s ease;
+}
+}
+@media screen and (max-width:698px) { 
+    body { 
+        padding: 0; 
+    }
+}
